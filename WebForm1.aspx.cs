@@ -17,7 +17,7 @@ namespace WebApplication2
         protected void Button1_Click(object sender, EventArgs e)
         {
             //path ειναι το connection string
-            string path = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\gfilippaios\Desktop\WebApplication2\database\ides5.mdb";
+            string path = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\gfilippaios\source\repos\WebApplication2\database\database\ides5.mdb";
            //εδω γινεται η εντολη της sql 
             string query = "insert into Table1 (Αμκα, Όνομα, Επίθετο, Email, Τηλέφωνο, Φύλο, Ηλικία, Διεύθυνση_κατοικίας, Ημερομηνία_ώρα, Υποκείμενα_νοσήματα) values('" + TextBox1.Text.ToString() + "','" + TextBox2.Text.ToString() + "','" + TextBox3.Text.ToString() + "','" + TextBox4.Text.ToString() + "','" + TextBox5.Text.ToString() + "','" + TextBox11.Text.ToString() + "','" + TextBox7.Text.ToString() + "','" + TextBox8.Text.ToString() + "','" + TextBox9.Text.ToString() + "','" + TextBox10.Text.ToString() + "') ";
             //δημιουργια αντικειμενου newinstert της κλασης Connectdatabase
